@@ -4,9 +4,6 @@ using System.Linq;
 using System.Windows.Forms;
 using ПлавающиеФигуры.Engine;
 
-//There's no home for you here
-
-//
 namespace Плавающие_фигуры
 {
     static class Program
