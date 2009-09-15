@@ -4,6 +4,10 @@ using System.Linq;
 using System.Windows.Forms;
 using ПлавающиеФигуры.Engine;
 
+//
+//
+//
+//
 namespace Плавающие_фигуры
 {
     static class Program
