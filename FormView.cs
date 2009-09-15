@@ -8,6 +8,9 @@ using System.Text;
 using System.Windows.Forms;
 using ПлавающиеФигуры.Engine;
 
+
+// Simple change
+
 namespace Плавающие_фигуры
 {
     public partial class FormView : Form, IView, INumberOfShapesObserver
