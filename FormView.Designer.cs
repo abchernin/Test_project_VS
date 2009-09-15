@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.mainControlsGroupBox = new System.Windows.Forms.GroupBox();
             this.stopButton = new System.Windows.Forms.Button();
@@ -57,11 +58,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.motionControlGroupBox = new System.Windows.Forms.GroupBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.MQTrackBar = new System.Windows.Forms.TrackBar();
-            this.RFTrackbar = new System.Windows.Forms.TrackBar();
-            this.label7 = new System.Windows.Forms.Label();
             this.drawTailsCheckBox = new System.Windows.Forms.CheckBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.RFTrackbar = new System.Windows.Forms.TrackBar();
+            this.MQTrackBar = new System.Windows.Forms.TrackBar();
+            this.label6 = new System.Windows.Forms.Label();
+            this.MainWindowTooltip = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.mainControlsGroupBox.SuspendLayout();
             this.addRemoveGroupBox.SuspendLayout();
@@ -71,8 +73,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.sizeVariable1Numeric)).BeginInit();
             this.numberOfShapesGroupBox.SuspendLayout();
             this.motionControlGroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.MQTrackBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RFTrackbar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MQTrackBar)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -368,37 +370,15 @@
             this.motionControlGroupBox.TabStop = false;
             this.motionControlGroupBox.Text = "Управление движением";
             // 
-            // label6
+            // drawTailsCheckBox
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(10, 20);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(168, 13);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Коэффициент макс. смещения:";
-            // 
-            // MQTrackBar
-            // 
-            this.MQTrackBar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.MQTrackBar.Location = new System.Drawing.Point(6, 36);
-            this.MQTrackBar.Maximum = 40;
-            this.MQTrackBar.Minimum = 1;
-            this.MQTrackBar.Name = "MQTrackBar";
-            this.MQTrackBar.Size = new System.Drawing.Size(191, 37);
-            this.MQTrackBar.TabIndex = 2;
-            this.MQTrackBar.Value = 5;
-            // 
-            // RFTrackbar
-            // 
-            this.RFTrackbar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.RFTrackbar.Location = new System.Drawing.Point(6, 79);
-            this.RFTrackbar.Maximum = 33;
-            this.RFTrackbar.Minimum = 1;
-            this.RFTrackbar.Name = "RFTrackbar";
-            this.RFTrackbar.Size = new System.Drawing.Size(196, 37);
-            this.RFTrackbar.TabIndex = 2;
-            this.RFTrackbar.Value = 4;
-            this.RFTrackbar.ValueChanged += new System.EventHandler(this.RFTrackbar_ValueChanged);
+            this.drawTailsCheckBox.AutoSize = true;
+            this.drawTailsCheckBox.Location = new System.Drawing.Point(12, 118);
+            this.drawTailsCheckBox.Name = "drawTailsCheckBox";
+            this.drawTailsCheckBox.Size = new System.Drawing.Size(119, 17);
+            this.drawTailsCheckBox.TabIndex = 5;
+            this.drawTailsCheckBox.Text = "Рисовать \"следы\"";
+            this.drawTailsCheckBox.UseVisualStyleBackColor = true;
             // 
             // label7
             // 
@@ -409,15 +389,37 @@
             this.label7.TabIndex = 3;
             this.label7.Text = "Частота обновления: ";
             // 
-            // drawTailsCheckBox
+            // RFTrackbar
             // 
-            this.drawTailsCheckBox.AutoSize = true;
-            this.drawTailsCheckBox.Location = new System.Drawing.Point(12, 118);
-            this.drawTailsCheckBox.Name = "drawTailsCheckBox";
-            this.drawTailsCheckBox.Size = new System.Drawing.Size(119, 17);
-            this.drawTailsCheckBox.TabIndex = 5;
-            this.drawTailsCheckBox.Text = "Рисовать \"следы\"";
-            this.drawTailsCheckBox.UseVisualStyleBackColor = true;
+            this.RFTrackbar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.RFTrackbar.Location = new System.Drawing.Point(6, 79);
+            this.RFTrackbar.Maximum = 33;
+            this.RFTrackbar.Minimum = 1;
+            this.RFTrackbar.Name = "RFTrackbar";
+            this.RFTrackbar.Size = new System.Drawing.Size(196, 45);
+            this.RFTrackbar.TabIndex = 2;
+            this.RFTrackbar.Value = 4;
+            this.RFTrackbar.ValueChanged += new System.EventHandler(this.RFTrackbar_ValueChanged);
+            // 
+            // MQTrackBar
+            // 
+            this.MQTrackBar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.MQTrackBar.Location = new System.Drawing.Point(6, 36);
+            this.MQTrackBar.Maximum = 40;
+            this.MQTrackBar.Minimum = 1;
+            this.MQTrackBar.Name = "MQTrackBar";
+            this.MQTrackBar.Size = new System.Drawing.Size(191, 45);
+            this.MQTrackBar.TabIndex = 2;
+            this.MQTrackBar.Value = 5;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(10, 20);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(168, 13);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Коэффициент макс. смещения:";
             // 
             // FormView
             // 
@@ -431,7 +433,7 @@
             this.Controls.Add(this.mainControlsGroupBox);
             this.Controls.Add(this.pictureBox1);
             this.Name = "FormView";
-            this.Text = "Form1";
+            this.Text = "Трэш и угар";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.mainControlsGroupBox.ResumeLayout(false);
             this.addRemoveGroupBox.ResumeLayout(false);
@@ -444,8 +446,8 @@
             this.numberOfShapesGroupBox.PerformLayout();
             this.motionControlGroupBox.ResumeLayout(false);
             this.motionControlGroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.MQTrackBar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.RFTrackbar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MQTrackBar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -486,6 +488,7 @@
         private System.Windows.Forms.TrackBar RFTrackbar;
         private System.Windows.Forms.TrackBar MQTrackBar;
         private System.Windows.Forms.CheckBox drawTailsCheckBox;
+        private System.Windows.Forms.ToolTip MainWindowTooltip;
     }
 }
 
