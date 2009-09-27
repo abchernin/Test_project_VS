@@ -25,6 +25,7 @@ namespace Плавающие_фигуры
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            // Creating new MVC triplet
             Model model = new Model();
             FormView mainView = new FormView(model, AREA_WIDTH, AREA_HEIGHT, AREA_OFFSET);
             Presenter presenter = new Presenter(model, mainView, AREA_WIDTH, AREA_HEIGHT, AREA_OFFSET);
