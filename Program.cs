@@ -29,6 +29,7 @@ namespace Плавающие_фигуры
             Model model = new Model();
             FormView mainView = new FormView(model, AREA_WIDTH, AREA_HEIGHT, AREA_OFFSET);
             Presenter presenter = new Presenter(model, mainView, AREA_WIDTH, AREA_HEIGHT, AREA_OFFSET);
+            // Running the app
             Application.Run(mainView);
         }
     }
