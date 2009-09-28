@@ -9,6 +9,8 @@ namespace Плавающие_фигуры
     static class Program
     {
 
+        //This is SPARTA!
+
         // Параметры поля
         const int AREA_HEIGHT = 500;
         const int AREA_WIDTH = 500;
