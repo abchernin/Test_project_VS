@@ -4,6 +4,7 @@ using System.Linq;
 using System.Windows.Forms;
 using ПлавающиеФигуры.Engine;
 
+//ASDFASDF Q3WR4FASDFV Q24TASDF Q243RFTA SFV
 namespace Плавающие_фигуры
 {
     static class Program
