@@ -7,7 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using ПлавающиеФигуры.Engine;
-                                               //AWER ASDF AQ2F    asdfasdf
+
+
+//asdf
 namespace Плавающие_фигуры
 {
     public partial class FormView : Form, IView, INumberOfShapesObserver
